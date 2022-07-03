@@ -15,7 +15,7 @@ export default function SignUp() {
     {loading ? (
         'Sending magic link...'
       ) : (
-        <form onSubmit={handleLogin}>
+        <form onSubmit={handleLogin} className="formsign">
           <label htmlFor="email">Email</label>
           <input
             id="email"
@@ -25,8 +25,8 @@ export default function SignUp() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <button className="button block" aria-live="polite">
-            Send magic link
+          <button className="button block" aria-live="polite" variant="primary" size="lg">
+            Send Email Confirmation
           </button>
         </form>
       )}
