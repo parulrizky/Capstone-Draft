@@ -24,7 +24,7 @@ function Footer() {
             <Button buttonStyle='btn--outline'>Subscribe</Button>
           </form>
         </div>
-  </section>*/}
+  </section>
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
@@ -43,7 +43,7 @@ function Footer() {
             <Link to='/'>Sponsorships</Link>
           </div>
         </div>
-      </div>
+  </div>*/}
       <section class='social-media'>
         <div class='social-media-wrap'>
           <div class='footer-logo'>
@@ -51,7 +51,6 @@ function Footer() {
             FEDMVI
             </Link>
           </div>
-          <small class='website-rights'>FEDMVI © 2022</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'

@@ -11,11 +11,11 @@ export default function SignUp() {
   }
 
   return <div>
-    <h1 className='sign-up'>SIGN IN / SIGN UP</h1>
+    <h1 className='sign-up'>Login</h1>
     {loading ? (
         'Sending magic link...'
       ) : (
-        <form onSubmit={handleLogin} className="formsign">
+        <form className='sign-up' onSubmit={handleLogin}>
           <label htmlFor="email">Email</label>
           <input
             id="email"

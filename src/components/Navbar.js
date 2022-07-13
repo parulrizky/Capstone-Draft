@@ -63,7 +63,7 @@ window.addEventListener('resize', showButton);
             </li>            
             {/*{user ? <li><Link onClick={signOut} className='nav-links-mobile'>Logout</Link></li> : <li>
             <Link to='/sign-up' className='nav-links-mobile onClick={closeMobileMenu}>Sign Up</Link> </li>*/}
-            {!user ? <Button buttonStyle='btn--outline' onClick={closeMobileMenu}>SIGN UP</Button> : <Button buttonStyle='btn--outline' onClick={signOut}>LOG OUT</Button>}
+            {!user ? <Button buttonStyle='btn--outline' onClick={closeMobileMenu}>SIGN UP</Button> : <Button buttonStyle='btn--outline' onClick={signOut}>LOG OUT</Button>}          
           </ul>
         </div>
       </nav>
