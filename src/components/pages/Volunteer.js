@@ -1,22 +1,30 @@
 import React from 'react';
-import '../../App.css';
 import {
-  FormControl,
-  FormLabel,
   Button,
-  Col,
-  Row,
   Form,
+  Container,
 } from "react-bootstrap";
 import "./Volunteer.css";
 
 export default function Volunteer() {
   return ( 
   <>
+  <h1>DAFTAR</h1>
+  <div className='volimg'>
     <Form>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+    <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label className='relawan1'>Nama Lengkap</Form.Label>
         <Form.Control type="nama" placeholder="" />
+        <Form.Text className="text-muted"></Form.Text>
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label className='relawan1'>Email</Form.Label>
+        <Form.Control type="email" placeholder="user@example.com" />
+        <Form.Text className="text-muted"></Form.Text>
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label className='relawan1'>No. HP</Form.Label>
+        <Form.Control type="nomorhp" placeholder="08.." />
         <Form.Text className="text-muted"></Form.Text>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -34,18 +42,25 @@ export default function Volunteer() {
             <option></option>
             <option value="1">Karyawan</option>
             <option value="2">Pelajar/Mahasiswa</option>
+            <option value="2">Lainnya</option>
           </Form.Select>
         <Form.Text className="text-muted"></Form.Text>
       </Form.Group>
-      <Form.Group controlId="formFile" className="mb-3">
-        <Form.Label className='relawan1'>Upload CV</Form.Label>
-        <Form.Control type="file" />
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label className='relawan1'>Alamat</Form.Label>
+        <Form.Control type="alamat" placeholder="" />
+        <Form.Text className="text-muted"></Form.Text>
       </Form.Group>
-      
-      <Button className='relawan1' variant="primary" type="submit">
-        Submit
-      </Button>
-    </Form>      
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label className='relawan1'>Alasan ingin Menjadi Relawan</Form.Label>
+        <Form.Control as="textarea" />
+        <Form.Text className="text-muted"></Form.Text>
+      </Form.Group>
+
+      <Button variant="primary">Submit</Button>
+    </Form>
+    </div>   
     </>
   );
 }
+

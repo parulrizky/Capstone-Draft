@@ -1,7 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { Button } from './Button';
-import './HeroSection.css';
+import './Dashboard.css';
 
 
 function HeroSection() {
@@ -10,16 +9,6 @@ function HeroSection() {
     <video src='/videos/video-1.webm' autoPlay loop muted />
     {/*<p>What is going on today??</p>*/}
     <p>What is going on today??</p>
-
-    <div className='hero-btns'>
-        {/*<Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        >
-          GET STARTED
-        </Button>*/}
-      </div>
     </div>
   );
 }

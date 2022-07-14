@@ -1,10 +1,12 @@
 .cards {
   padding: 10px;
-  background: #fff;
+  background: rgb(255, 255, 255);
 }
 
 h1 {
   text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  padding-top: 20px;
 }
 
 .cards__container {
@@ -42,6 +44,7 @@ h1 {
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .cards__item__pic-wrap {
